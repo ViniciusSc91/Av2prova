@@ -46,4 +46,8 @@ public class MicroEmpresaService {
 		
 		microEmpresaRepository.deleteById(id);
 	}
+	public MicroEmpresa create(MicroEmpresa microempresa){
+        microEmpresaRepository.save(microempresa);
+        return microempresa;
+    }
 }

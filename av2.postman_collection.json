@@ -23,6 +23,103 @@
 				}
 			},
 			"response": []
+		},
+		{
+			"name": "http://localhost:8080/microEmpresa Copy 2",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://localhost:8080/microEmpresa/61aec5f04f1d91391ffda3c4",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"microEmpresa",
+						"61aec5f04f1d91391ffda3c4"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "http://localhost:8080/microEmpresa",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"nome\":\"Empresa\",\r\n    \"cnpj\":\"1231232131\",\r\n    \"email\":\"khjgsdshd@.com\",\r\n    \"dataHora\": \"23\"\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:8080/microEmpresa",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"microEmpresa"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "http://localhost:8080/microEmpresa Copy",
+			"request": {
+				"method": "PUT",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"nome\":\"Empresa Atualizada\",\r\n    \"cnpj\":\"1231232131\",\r\n    \"email\":\"khjgsdshd@.com\",\r\n    \"dataHora\": \"23\"\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:8080/microEmpresa/61aec5f04f1d91391ffda3c4",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"microEmpresa",
+						"61aec5f04f1d91391ffda3c4"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "http://localhost:8080/microEmpresa/61aec561814f8052e349f6f3",
+			"request": {
+				"method": "DELETE",
+				"header": [],
+				"url": {
+					"raw": "http://localhost:8080/microEmpresa/61aec561814f8052e349f6f3",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"microEmpresa",
+						"61aec561814f8052e349f6f3"
+					]
+				}
+			},
+			"response": []
 		}
 	]
 }

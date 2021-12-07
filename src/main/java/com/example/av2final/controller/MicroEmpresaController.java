@@ -8,6 +8,7 @@ import org.springframework.http.ResponseEntity;
 import org.springframework.web.bind.annotation.DeleteMapping;
 import org.springframework.web.bind.annotation.GetMapping;
 import org.springframework.web.bind.annotation.PathVariable;
+import org.springframework.web.bind.annotation.PostMapping;
 import org.springframework.web.bind.annotation.PutMapping;
 import org.springframework.web.bind.annotation.RequestBody;
 import org.springframework.web.bind.annotation.RestController;
@@ -51,6 +52,15 @@ private final MicroEmpresaService microEmpresaService;
 		var microEmpresa = new MicroEmpresa(microEmpresaDto);
 		
 		microEmpresa = microEmpresaService.update(id, microEmpresa);
+		
+		return new MicroEmpresaDto(microEmpresa);
+	}
+	
+	@PostMapping("/microEmpresa")
+	public MicroEmpresaDto create(@RequestBody MicroEmpresaDto microEmpresaDto) {
+		var microEmpresa = new MicroEmpresa(microEmpresaDto);
+		
+		microEmpresa = microEmpresaService.create(microEmpresa);
 		
 		return new MicroEmpresaDto(microEmpresa);
 	}

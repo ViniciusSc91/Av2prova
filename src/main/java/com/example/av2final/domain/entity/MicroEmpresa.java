@@ -29,11 +29,11 @@ public class MicroEmpresa {
 	private MicroEmpresaStatus status;
 	
 	public MicroEmpresa(MicroEmpresaDto m) {
-		this.id = getId();
-		this.nome = getNome();
-		this.cnpj = getCnpj();
-		this.email = getEmail();
-		this.datahora = getDatahora();
-		this.status = getStatus();
+		
+		this.nome = m.getNome();
+		this.cnpj = m.getCnpj();
+		this.email = m.getEmail();
+		this.datahora = m.getDatahora();
+		this.status = m.getStatus();
 	}
 }
