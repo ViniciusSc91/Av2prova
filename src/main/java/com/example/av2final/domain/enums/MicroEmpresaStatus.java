@@ -1,6 +1,6 @@
 package com.example.av2final.domain.enums;
 
-public class MicroEmpresaStatus {
+public enum MicroEmpresaStatus {
 	INACTIVE, 
 	ACTIVE, 
 	BLOCKED

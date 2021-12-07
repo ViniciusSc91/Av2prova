@@ -35,11 +35,11 @@ private final MicroEmpresaService microEmpresaService;
 	
 	@GetMapping("/microEmpresa")
 	public List<MicroEmpresaDto> getAll() {
-		var microEmpresa = microEmpresaService.getAll();
+		var microEmpresas = microEmpresaService.getAll();
 		
 		var microEmpresaDtos = new ArrayList<MicroEmpresaDto>();
 		
-		for (var microEmpresa: microEmpresa) {
+		for (var microEmpresa: microEmpresas) {
 			microEmpresaDtos.add(new MicroEmpresaDto(microEmpresa));
 		}
 		
