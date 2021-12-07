@@ -63,7 +63,7 @@ class MicroEmpresaServiceTest {
 			fail("Expected NotFoundException");
 		} catch (NotFoundException ex) {
 			// assert:
-			Assertions.assertEquals(ex.getMessage(), "Revista with ID " + id + " not found");
+			Assertions.assertEquals(ex.getMessage(), "MicroEmpresa with ID " + id + " not found");
 		}
 		
 		// verify: 
